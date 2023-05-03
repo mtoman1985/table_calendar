@@ -175,7 +175,8 @@ class CalendarStyle {
     ),
     this.todayTextStyle = const TextStyle(
       color: Color.fromARGB(255, 247, 249, 248),
-      fontSize: 16.0,
+      fontSize: 18.0,
+      fontWeight: FontWeight.w500,
     ), //
     this.todayDecoration = const BoxDecoration(
       color: Color.fromARGB(255, 85, 191, 203),
@@ -183,7 +184,8 @@ class CalendarStyle {
     ),
     this.selectedTextStyle = const TextStyle(
       color: const Color(0xFFFAFAFA),
-      fontSize: 16.0,
+      fontSize: 18.0,
+      fontWeight: FontWeight.w500,
     ),
     this.selectedDecoration = const BoxDecoration(
       color: Color.fromARGB(255, 232, 113, 224),
