@@ -220,7 +220,8 @@ class CalendarStyle {
       ),
       shape: BoxShape.circle,
     ),
-    this.weekendTextStyle = const TextStyle(color: const Color(0xFF5A5A5A)),
+    this.weekendTextStyle =
+        const TextStyle(color: Color.fromARGB(255, 244, 108, 108)),
     this.weekendDecoration = const BoxDecoration(shape: BoxShape.circle),
     this.weekNumberTextStyle =
         const TextStyle(fontSize: 12, color: const Color(0xFFBFBFBF)),

@@ -214,7 +214,7 @@ class TableCalendar<T> extends StatefulWidget {
     this.locale,
     this.rangeStartDay,
     this.rangeEndDay,
-    this.weekendDays = const [DateTime.saturday, DateTime.sunday],
+    this.weekendDays = const [DateTime.friday], // weekEnd
     this.calendarFormat = CalendarFormat.month,
     this.availableCalendarFormats = const {
       CalendarFormat.month: 'Month',
@@ -262,7 +262,8 @@ class TableCalendar<T> extends StatefulWidget {
   })  : assert(availableCalendarFormats.keys.contains(calendarFormat)),
         assert(availableCalendarFormats.length <= CalendarFormat.values.length),
         assert(weekendDays.isNotEmpty
-            ? weekendDays.every((day) => day >= DateTime.friday)
+            ? weekendDays.every(
+                (day) => day >= DateTime.monday && day <= DateTime.sunday)
             : true),
         focusedDay = normalizeDate(focusedDay),
         firstDay = normalizeDate(firstDay),
@@ -771,7 +772,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
 
   bool _isWeekend(
     DateTime day, {
-    List<int> weekendDays = const [DateTime.saturday, DateTime.sunday],
+    List<int> weekendDays = const [DateTime.friday],
   }) {
     return weekendDays.contains(day.weekday);
   }
