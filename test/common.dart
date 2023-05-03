@@ -9,7 +9,6 @@ ValueKey<String> dateToKey(DateTime date, {String prefix = ''}) {
 }
 
 const calendarFormatMap = const {
-  CalendarFormat.month: 'Month',
-  CalendarFormat.twoWeeks: 'Two weeks',
-  CalendarFormat.week: 'week',
+  CalendarFormat.month: 'شهر',
+  CalendarFormat.week: 'أسبوع',
 };

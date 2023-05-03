@@ -44,7 +44,7 @@ void main() {
 
         await tester.tap(find.byType(FormatButton));
         await tester.pumpAndSettle();
-        expect(calendarFormat, CalendarFormat.twoWeeks);
+        expect(calendarFormat, CalendarFormat.week);
       },
     );
 
@@ -58,7 +58,7 @@ void main() {
           setupTestWidget(
             FormatButton(
               availableCalendarFormats: calendarFormatMap,
-              calendarFormat: CalendarFormat.twoWeeks,
+              calendarFormat: CalendarFormat.week,
               decoration: headerStyle.formatButtonDecoration,
               padding: headerStyle.formatButtonPadding,
               textStyle: headerStyle.formatButtonTextStyle,

@@ -268,8 +268,6 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
     switch (format) {
       case CalendarFormat.month:
         return _getMonthCount(startDay, focusedDay);
-      case CalendarFormat.twoWeeks:
-        return _getTwoWeekCount(startDay, focusedDay);
       case CalendarFormat.week:
         return _getWeekCount(startDay, focusedDay);
       default:
@@ -288,15 +286,11 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
     return last.difference(_firstDayOfWeek(first)).inDays ~/ 7;
   }
 
-  int _getTwoWeekCount(DateTime first, DateTime last) {
-    return last.difference(_firstDayOfWeek(first)).inDays ~/ 14;
-  }
-
   int _getRowCount(CalendarFormat format, DateTime focusedDay) {
-    if (format == CalendarFormat.twoWeeks) {
-      return 2;
-    } else if (format == CalendarFormat.week) {
+    if (format == CalendarFormat.week) {
       return 1;
+    } else if (format == CalendarFormat.month) {
+      return 4;
     } else if (widget.sixWeekMonthsEnforced) {
       return 6;
     }

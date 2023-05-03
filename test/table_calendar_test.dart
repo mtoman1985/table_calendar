@@ -167,7 +167,7 @@ void main() {
 
         await tester.pumpWidget(
           createTableCalendar(
-            calendarFormat: CalendarFormat.twoWeeks,
+            calendarFormat: CalendarFormat.week,
             onPageChanged: (focusedDay) {
               updatedFocusedDay = focusedDay;
             },
@@ -210,7 +210,7 @@ void main() {
 
         await tester.pumpWidget(
           createTableCalendar(
-            calendarFormat: CalendarFormat.twoWeeks,
+            calendarFormat: CalendarFormat.week,
             onPageChanged: (focusedDay) {
               updatedFocusedDay = focusedDay;
             },
@@ -265,7 +265,7 @@ void main() {
       (tester) async {
         await tester.pumpWidget(
           createTableCalendar(
-            calendarFormat: CalendarFormat.twoWeeks,
+            calendarFormat: CalendarFormat.week,
           ),
         );
 
@@ -649,7 +649,7 @@ void main() {
 
       await tester.drag(find.byType(CellContent).first, const Offset(0, -500));
       await tester.pumpAndSettle();
-      expect(calendarFormat, CalendarFormat.twoWeeks);
+      expect(calendarFormat, CalendarFormat.week);
 
       await tester.drag(find.byType(CellContent).first, const Offset(0, 500));
       await tester.pumpAndSettle();
@@ -657,7 +657,7 @@ void main() {
     });
 
     testWidgets('when initial format is two weeks', (tester) async {
-      CalendarFormat calendarFormat = CalendarFormat.twoWeeks;
+      CalendarFormat calendarFormat = CalendarFormat.week;
 
       await tester.pumpWidget(setupTestWidget(
         TableCalendar(
@@ -703,7 +703,7 @@ void main() {
 
       await tester.drag(find.byType(CellContent).first, const Offset(0, 500));
       await tester.pumpAndSettle();
-      expect(calendarFormat, CalendarFormat.twoWeeks);
+      expect(calendarFormat, CalendarFormat.week);
     });
   });
 
