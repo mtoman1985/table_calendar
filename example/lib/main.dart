@@ -37,7 +37,7 @@ class _StartPageState extends State<StartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(' mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm '),
+        title: Text(' w '),
       ),
       body: Center(
         child: Column(
