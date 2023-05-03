@@ -68,7 +68,6 @@ class TableCalendarBase extends StatefulWidget {
     ),
     this.availableCalendarFormats = const {
       CalendarFormat.month: 'Month',
-      CalendarFormat.twoWeeks: '2 weeks',
       CalendarFormat.week: 'Week',
     },
     this.onVerticalSwipe,

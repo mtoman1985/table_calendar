@@ -170,15 +170,15 @@ class CalendarStyle {
     this.markersOffset = const PositionedOffset(),
     this.rangeHighlightColor = const Color(0xFFBBDDFF),
     this.markerDecoration = const BoxDecoration(
-      color: const Color(0xFF263238),
+      color: Color.fromARGB(255, 175, 196, 56),
       shape: BoxShape.circle,
     ),
     this.todayTextStyle = const TextStyle(
-      color: const Color(0xFFFAFAFA),
+      color: Color.fromARGB(255, 247, 249, 248),
       fontSize: 16.0,
     ), //
     this.todayDecoration = const BoxDecoration(
-      color: const Color(0xFF9FA8DA),
+      color: Color.fromARGB(255, 85, 191, 203),
       shape: BoxShape.circle,
     ),
     this.selectedTextStyle = const TextStyle(
@@ -186,7 +186,7 @@ class CalendarStyle {
       fontSize: 16.0,
     ),
     this.selectedDecoration = const BoxDecoration(
-      color: const Color(0xFF5C6BC0),
+      color: Color.fromARGB(255, 232, 113, 224),
       shape: BoxShape.circle,
     ),
     this.rangeStartTextStyle = const TextStyle(
