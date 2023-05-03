@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'TableCalendar Example',
+      title: 'dfgfdgd Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
