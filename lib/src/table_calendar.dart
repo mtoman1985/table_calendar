@@ -217,8 +217,8 @@ class TableCalendar<T> extends StatefulWidget {
     this.weekendDays = const [DateTime.friday], // weekEnd
     this.calendarFormat = CalendarFormat.month,
     this.availableCalendarFormats = const {
-      CalendarFormat.month: 'Month',
-      CalendarFormat.week: 'Week',
+      CalendarFormat.month: 'شهر',
+      CalendarFormat.week: 'أسبوع',
     },
     this.headerVisible = true,
     this.daysOfWeekVisible = true,

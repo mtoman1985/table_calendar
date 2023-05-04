@@ -60,6 +60,7 @@ class CellContent extends StatelessWidget {
       );
     }
 
+    /// أيام الشهر كلها
     final text = '${day.day}';
     final margin = calendarStyle.cellMargin;
     final padding = calendarStyle.cellPadding;

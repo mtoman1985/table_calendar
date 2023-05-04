@@ -67,8 +67,8 @@ class TableCalendarBase extends StatefulWidget {
       swipeDetectionBehavior: SwipeDetectionBehavior.continuousDistinct,
     ),
     this.availableCalendarFormats = const {
-      CalendarFormat.month: 'Month',
-      CalendarFormat.week: 'Week',
+      CalendarFormat.month: 'شهر',
+      CalendarFormat.week: 'أسبوع',
     },
     this.onVerticalSwipe,
     this.onPageChanged,
@@ -289,8 +289,6 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
   int _getRowCount(CalendarFormat format, DateTime focusedDay) {
     if (format == CalendarFormat.week) {
       return 1;
-    } else if (format == CalendarFormat.month) {
-      return 4;
     } else if (widget.sixWeekMonthsEnforced) {
       return 6;
     }
