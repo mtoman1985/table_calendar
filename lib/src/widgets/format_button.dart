@@ -63,7 +63,6 @@ class FormatButton extends StatelessWidget {
     final formats = availableCalendarFormats.keys.toList();
     int id = formats.indexOf(calendarFormat);
     id = (id + 1) % formats.length;
-
     return formats[id];
   }
 }

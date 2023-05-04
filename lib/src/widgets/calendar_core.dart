@@ -86,7 +86,7 @@ class CalendarCore extends StatelessWidget {
           tablePadding: tablePadding,
           dowBuilder: (context, day) {
             return SizedBox(
-              height: 70,
+              height: dowHeight,
               child: dowBuilder?.call(context, day),
             );
           },
@@ -261,9 +261,7 @@ class CalendarCore extends StatelessWidget {
   }
 
   int _getRowCount(CalendarFormat format, DateTime focusedDay) {
-    if (format == CalendarFormat.month) {
-      return 4;
-    } else if (format == CalendarFormat.week) {
+    if (format == CalendarFormat.week) {
       return 1;
     } else if (sixWeekMonthsEnforced) {
       return 6;
