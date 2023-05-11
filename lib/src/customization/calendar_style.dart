@@ -169,6 +169,8 @@ class CalendarStyle {
     this.cellAlignment = Alignment.center,
     this.markersOffset = const PositionedOffset(),
     this.rangeHighlightColor = const Color(0xFFBBDDFF),
+
+    ///marker Colors
     this.markerDecoration = const BoxDecoration(
       color: Color.fromARGB(255, 26, 117, 25),
       shape: BoxShape.circle,
