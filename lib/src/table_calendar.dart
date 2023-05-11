@@ -337,7 +337,6 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
       } else {
         id = 0;
       }
-
       widget.onFormatChanged!(formats[id]);
     }
   }
