@@ -30,7 +30,9 @@ class DaysOfWeekStyle {
   const DaysOfWeekStyle({
     this.dowTextFormatter,
     this.decoration = const BoxDecoration(),
-    this.weekdayStyle = const TextStyle(color: const Color(0xFF4F4F4F)),
-    this.weekendStyle = const TextStyle(color: const Color(0xFF6A6A6A)),
+    this.weekdayStyle =
+        const TextStyle(color: Color.fromARGB(255, 230, 64, 64)),
+    this.weekendStyle =
+        const TextStyle(color: Color.fromARGB(255, 86, 184, 169)),
   });
 }
