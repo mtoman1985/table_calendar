@@ -333,9 +333,9 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
       // Order of CalendarFormats must be from biggest to smallest,
       // e.g.: [month, week]
       if (isSwipeUp) {
-        id = min(formats.length - 1, id);
+        id = min(1, 0);
       } else {
-        id = max(0, id);
+        id = max(1, 0);
       }
 
       widget.onFormatChanged!(formats[id]);
