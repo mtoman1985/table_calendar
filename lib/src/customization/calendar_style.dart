@@ -170,7 +170,7 @@ class CalendarStyle {
     this.markersOffset = const PositionedOffset(),
     this.rangeHighlightColor = const Color(0xFFBBDDFF),
     this.markerDecoration = const BoxDecoration(
-      color: Color.fromARGB(255, 247, 247, 106),
+      color: Color.fromARGB(255, 26, 117, 25),
       shape: BoxShape.circle,
     ),
     this.todayTextStyle = const TextStyle(
